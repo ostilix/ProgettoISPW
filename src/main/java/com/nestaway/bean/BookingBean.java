@@ -22,7 +22,7 @@ public class BookingBean {
         return this.codeBooking;
     }
 
-    public void setCodeBooking(String code) throws IncorrectDataException {
+    public void setCodeBooking(String code){
         this.codeBooking = code;
     }
 
@@ -77,7 +77,7 @@ public class BookingBean {
     }
 
     public void setTelephone(String telephone) throws IncorrectDataException {
-        String phonePattern = "^\\+?[0-9]{6,15}$";
+        String phonePattern = "^\\+?\\{6,15}$";
         if (telephone == null || !Pattern.matches(phonePattern, telephone)) {
             throw new IncorrectDataException("Telephone number is not valid.");
         }
@@ -128,7 +128,7 @@ public class BookingBean {
         this.onlinePayment = onlinePayment;
     }
 
-    public void setIdStay(Integer idStay) throws IncorrectDataException {
+    public void setIdStay(Integer idStay) {
         this.idStay = idStay;
     }
 

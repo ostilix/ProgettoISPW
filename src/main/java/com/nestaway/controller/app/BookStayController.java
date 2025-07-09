@@ -65,10 +65,10 @@ public class BookStayController {
             return result;
 
         } catch (DAOException e) {
-            Logger.getGlobal().log(Level.WARNING, "BookStayController.findStays - DAO error (maybe stayDAO or availabilityDAO)", e);
-            throw new OperationFailedException("DAO error in findStays: " + e.getMessage());
+            Logger.getGlobal().log(Level.WARNING, e.getMessage(), e.getCause());
+            throw new OperationFailedException("DAO error in findStays");
         } catch (IncorrectDataException e) {
-            Logger.getGlobal().log(Level.SEVERE, "BookStayController.findStays - Invalid data", e);
+            Logger.getGlobal().log(Level.SEVERE, e.getMessage(), e.getCause());
             throw new OperationFailedException("Invalid data in findStays");
         }
     }
@@ -103,7 +103,7 @@ public class BookStayController {
     }
 
     public void sendReservation(StayBean stayBean, BookingBean bookingBean, List<AvailabilityBean> availabilityBean)
-            throws OperationFailedException, NotFoundException, DAOException, IncorrectDataException, DuplicateEntryException {
+            throws OperationFailedException, DAOException, IncorrectDataException, DuplicateEntryException {
         try {
             checkBookingValid(bookingBean, availabilityBean);
 

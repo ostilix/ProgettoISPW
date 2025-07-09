@@ -6,7 +6,11 @@ import com.nestaway.utils.SessionManager;
 import com.nestaway.utils.dao.DemoDataLoader;
 import com.nestaway.utils.view.cli.ReturningHome;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class MainCLI {
+    private static final Logger logger = Logger.getLogger(MainCLI.class.getName());
 
     private MainCLI() {
         throw new IllegalStateException("Starter class");
@@ -17,7 +21,7 @@ public class MainCLI {
             try {
                 DemoDataLoader.load();
             } catch (EncryptionException e) {
-                System.err.println("Error loading demo data: " + e.getMessage());
+                logger.log(Level.SEVERE, "Error loading demo data", e); // ✅ Log al posto di System.err
             }
         }
 

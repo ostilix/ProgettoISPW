@@ -15,7 +15,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class BookingGUIControllerFX extends AbstractGUIControllerFX {
 
@@ -68,16 +67,14 @@ public class BookingGUIControllerFX extends AbstractGUIControllerFX {
             BookStayController bookStayController = new BookStayController();
 
             List<AvailabilityBean> allAvailabilities = bookStayController.findAvailability(stay);
-            List<AvailabilityBean> filteredAvailabilities = allAvailabilities.stream().filter(a -> !a.getDate().isBefore(SessionManager.getSessionManager().getSessionFromId(currentSession).getCheckIn()) && a.getDate().isBefore(SessionManager.getSessionManager().getSessionFromId(currentSession).getCheckOut())).collect(Collectors.toList());
+            List<AvailabilityBean> filteredAvailabilities = allAvailabilities.stream().filter(a -> !a.getDate().isBefore(SessionManager.getSessionManager().getSessionFromId(currentSession).getCheckIn()) && a.getDate().isBefore(SessionManager.getSessionManager().getSessionFromId(currentSession).getCheckOut())).toList();
 
             bookStayController.sendReservation(stay, booking, filteredAvailabilities);
             setMsg(message, "Booking successful! Your booking code is: " + booking.getCodeBooking());
-        } catch (IncorrectDataException | DuplicateEntryException e) {
+        } catch (IncorrectDataException | DuplicateEntryException | DAOException | NotFoundException e) {
             setMsg(message, e.getMessage());
         } catch (OperationFailedException e) {
             setMsg(errorMsg,e.getMessage());
-        } catch (DAOException | NotFoundException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -101,8 +98,8 @@ public class BookingGUIControllerFX extends AbstractGUIControllerFX {
             booking.setOnlinePayment(payPalRadio.isSelected());
 
             return booking;
-        } catch (IncorrectDataException e) {
-            throw new RuntimeException(e);
+        } catch (NumberFormatException e) {
+            throw new IncorrectDataException("Invalid data");
         }
     }
 
