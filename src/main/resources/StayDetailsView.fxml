@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" prefHeight="1536.0" prefWidth="1280.0" stylesheets="@css/stayDetailsStyle.css" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nestaway.controller.gui.fx.StayDetailsGUIControllerFX">
+   <content>
+      <AnchorPane maxHeight="1.7976931348623157E308" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Pane fx:id="overlayPane" styleClass="overlay" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <BorderPane fx:id="mainPane" layoutX="20.0" layoutY="20.0" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="errorMsg" text="Unable to complete operation. If the problem persist, please contact support!" visible="false" />
+                     </children>
+                  </HBox>
+               </bottom>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox minHeight="30.0" prefHeight="30.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="back" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #000000;" text="&lt; Back " />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" minHeight="600.0" prefHeight="600.0" prefWidth="200.0" spacing="40.0" style="-fx-background-color: #00000015; -fx-background-radius: 25;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fx:id="stayImage" fitHeight="520.0" fitWidth="520.0" pickOnBounds="true" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <VBox layoutX="10.0" layoutY="10.0" maxHeight="440.0" minHeight="440.0" prefHeight="440.0" prefWidth="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label fx:id="title" styleClass="title-label" text="Name Stay" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="City: " />
+                                          <Label fx:id="city" styleClass="label-details" text="Name City" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="Address:" />
+                                          <Label fx:id="address" styleClass="label-details" text="Address" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="238.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="Max guests:" />
+                                          <Label fx:id="guests" styleClass="label-details" text="max guests" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="288.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="Rooms:" />
+                                          <Label fx:id="rooms" styleClass="label-details" text="#" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="338.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="Bathrooms:" />
+                                          <Label fx:id="bathrooms" styleClass="label-details" text="#" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="Price per night:" />
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <Label styleClass="label-details" text="€" />
+                                                <Label fx:id="price" styleClass="label-details" text="price" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="295.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="Description:" />
+                                          <Label fx:id="description" styleClass="label-details" text="description" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Label styleClass="h2-title-label" text="Host:" />
+                                          <Label fx:id="username" styleClass="label-details" text="username" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Button fx:id="book" minHeight="50.0" mnemonicParsing="false" onAction="#bookStay" prefHeight="50.0" prefWidth="548.0" style="-fx-background-color: ff595a;" text="Book Stay" />
+                                          <Button fx:id="management" layoutX="10.0" layoutY="10.0" minHeight="50.0" mnemonicParsing="false" onAction="#bookManagement" prefHeight="50.0" prefWidth="548.0" style="-fx-background-color: ff595a;" styleClass="book-button" text="Booking Management" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="60.0" prefHeight="700.0" prefWidth="200.0" spacing="40.0" style="-fx-background-color: #00000015; -fx-background-radius: 25;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="title-label" text="Reviews" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <VBox fx:id="reviewsContainer" prefHeight="200.0" prefWidth="100.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <VBox fx:id="reviewCard1" prefHeight="0.0" prefWidth="100.0" style="-fx-background-color: ffffff; -fx-background-radius: 25;">
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <Label styleClass="label-details" text="rating" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <Label styleClass="label-details" text="comment" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <Label styleClass="label-details" text="date" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox fx:id="reviewCard2" layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="100.0" style="-fx-background-color: ffffff; -fx-background-radius: 25;">
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label styleClass="label-details" text="rating" />
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <Label styleClass="label-details" text="comment" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <Label styleClass="label-details" text="date" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <VBox fx:id="reviewCard3" layoutX="10.0" layoutY="185.0" prefHeight="0.0" prefWidth="100.0" style="-fx-background-color: ffffff; -fx-background-radius: 25;">
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label styleClass="label-details" text="rating" />
+                                                                  <Label styleClass="label-details" text="/5" />
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <Label styleClass="label-details" text="comment" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" prefHeight="0.0" prefWidth="200.0" spacing="20.0">
+                                                         <children>
+                                                            <Label styleClass="label-details" text="date" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <Pagination fx:id="numberPage" maxPageIndicatorCount="5" pageCount="10" prefHeight="200.0" prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Pagination>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="40.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #00000015; -fx-background-radius: 100;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label styleClass="title" text="NestAway" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="home1" maxHeight="40.0" minHeight="40.0" onAction="#goHome" prefHeight="40.0" style="-fx-background-color: ff595a;" styleClass="home-button" text="Home" />
+                              <Button fx:id="login" layoutX="140.0" layoutY="20.0" maxHeight="40.0" minHeight="40.0" onAction="#login" prefHeight="40.0" style="-fx-background-color: #000000;" styleClass="home-button" text="Login" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

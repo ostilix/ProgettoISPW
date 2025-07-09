@@ -1,0 +1,13 @@
+.text-alert {
+    -fx-text-fill: #737580;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-color: #333333;
+}
+
+.text-error {
+    -fx-text-fill: #ca1313;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-color: #cb1515;
+}

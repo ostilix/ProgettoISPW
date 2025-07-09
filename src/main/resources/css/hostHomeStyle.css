@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
+.root {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 15px;
+    -fx-text-fill: #2e2e2e;
+}
+
+/* === Sfondo della schermata === */
+.root-background {
+    -fx-background-image: url("../images/background_host.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+/* === Overlay bianco trasparente sopra lo sfondo === */
+.overlay {
+    -fx-background-color: rgba(255, 255, 255, 0.5); /* 25% di opacità */
+}
+
+/* === Pulsante Login in alto a destra === */
+.login-button {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 15px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #1e1e1e;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+/* === Etichette generiche === */
+.label {
+    -fx-font-size: 17px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #2a2a2a;
+}
+
+/* === Titolo centrale grande (frase motivazionale) === */
+.title-label {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+/* === Campi di testo (City, Check-in, ecc.) === */
+.text-field {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+    -fx-text-fill: #2e2e2e;
+    -fx-prompt-text-fill: #999999;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-color: 99999990;
+}
+
+/* === Pulsante "Search" === */
+.button {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #ff595a;
+    -fx-text-fill: white;
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #ff7676;
+}

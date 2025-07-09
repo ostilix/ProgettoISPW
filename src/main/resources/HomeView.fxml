@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" stylesheets="@css/homeStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nestaway.controller.gui.fx.HomeGUIControllerFX">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/background.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="overlayPane" styleClass="overlay">
+         <AnchorPane.topAnchor>0.0</AnchorPane.topAnchor>
+         <AnchorPane.bottomAnchor>0.0</AnchorPane.bottomAnchor>
+         <AnchorPane.leftAnchor>0.0</AnchorPane.leftAnchor>
+         <AnchorPane.rightAnchor>0.0</AnchorPane.rightAnchor>
+      </Pane>
+      <BorderPane fx:id="mainPane" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: FFFFFF99; -fx-background-radius: 100;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="titleLabel" styleClass="title" text="NestAway" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="210.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="login" onAction="#login" styleClass="login-button" text="Login" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                  <VBox alignment="CENTER" maxHeight="220.0" maxWidth="920.0" minHeight="220.0" minWidth="920.0" prefHeight="220.0" prefWidth="920.0" style="-fx-background-color: FFFFFF99; -fx-background-radius: 25;">
+                     <children>
+                        <Label styleClass="title-label" text="What adventure awaits you next?" />
+                        <HBox alignment="CENTER" maxWidth="880.0" minWidth="880.0" prefHeight="60.0" prefWidth="880.0" spacing="15.0">
+                           <children>
+                              <TextField fx:id="searchCity" prefHeight="40.0" promptText="City" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="searchCheckIn" layoutX="537.0" layoutY="45.0" prefHeight="40.0" promptText="Check-in (YYYY-mm-dd)" styleClass="text-field" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="searchCheckOut" layoutX="630.0" layoutY="45.0" prefHeight="40.0" promptText="Check-out (YYYY-mm-dd)" styleClass="text-field" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="searchGuests" layoutX="724.0" layoutY="45.0" prefHeight="40.0" promptText="Guests" styleClass="text-field" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxWidth="880.0" minWidth="880.0" prefHeight="30.0" prefWidth="880.0">
+                           <children>
+                              <Button fx:id="searchButton" alignment="CENTER" maxHeight="40.0" maxWidth="880.0" minHeight="40.0" mnemonicParsing="false" onAction="#searchStay" prefHeight="40.0" prefWidth="880.0" text="Search" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets top="3.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" />
+                     </padding>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="message" styleClass="check" text="Stay not found!" visible="false" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="errorMsg" text="Unable to complete operation. If the problem persist, please contact support!" visible="false" />
+               </children></HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

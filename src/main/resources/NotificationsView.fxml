@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="720.0" prefWidth="1280.0" styleClass="root-background" stylesheets="@css/notificationStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nestaway.controller.gui.fx.NotificationsGUIControllerFX">
+   <children>
+      <Pane fx:id="overlayPane" styleClass="overlay" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane fx:id="mainPane" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="errorMsg" text="Unable to complete operation. If the problem persist, please contact support!" visible="false" />
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #00000015; -fx-background-radius: 100;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label styleClass="title" text="NestAway" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="210.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="home" onAction="#goHome" styleClass="home-button" text="Home" />
+                        <Button fx:id="logout" layoutX="140.0" layoutY="21.0" onAction="#logout" style="-fx-background-color: #000000;" styleClass="logout-button" text="Logout" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <TableView fx:id="table" editable="true" maxWidth="1240.0" minWidth="1240.0" prefWidth="1240.0" style="-fx-background-radius: 0 0 25 25;" HBox.hgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="type" maxWidth="310.0" minWidth="310.0" prefWidth="310.0" text="Type" />
+                              <TableColumn fx:id="stay" maxWidth="310.0" minWidth="310.0" prefWidth="310.0" text="Stay" />
+                              <TableColumn fx:id="code" maxWidth="310.0" minWidth="310.0" prefWidth="310.0" text="BookingCode" />
+                              <TableColumn fx:id="time" maxWidth="310.0" minWidth="310.0" prefWidth="310.0" text="Time" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="selected" maxHeight="40.0" maxWidth="605.0" minHeight="40.0" mnemonicParsing="false" onAction="#deleteSelected" prefHeight="40.0" prefWidth="605.0" text="Delete selected notification" />
+                        <Button fx:id="all" layoutX="593.0" layoutY="42.0" maxHeight="40.0" maxWidth="605.0" minHeight="40.0" mnemonicParsing="false" onAction="#deleteAll" prefHeight="40.0" prefWidth="605.0" text="Delete all notifications" />
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="40.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

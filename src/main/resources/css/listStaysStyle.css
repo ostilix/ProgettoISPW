@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
+.root {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 15px;
+    -fx-text-fill: #2e2e2e;
+}
+
+.label {
+    -fx-font-size: 17px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #00000099;
+}
+
+.title-label {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.pagination {
+    -fx-font-family: "Roboto" !important;
+    -fx-font-size: 14px !important;
+    -fx-font-weight: normal !important;
+    -fx-background-color: transparent;
+    -fx-text-fill: white !important;
+}
+
+.name-stay {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 20px !important;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-text-fill: black !important;
+    -fx-cursor: hand;
+}
+
+.button {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #transparent;
+}
+
+.pagination {
+    -fx-background-color: transparent;
+}
+
+.pagination .control-box {
+    -fx-spacing: 5;
+}
+
+.pagination .number-button {
+    -fx-background-color: white;
+    -fx-border-color: #ff595a;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-text-fill: #ff595a;
+    -fx-font-weight: bold;
+}
+
+.pagination .number-button:hover {
+    -fx-background-color: #ffe5e5;
+}
+
+.pagination .number-button:selected {
+    -fx-background-color: #ff595a;
+    -fx-text-fill: white;
+    -fx-border-color: #ff595a;
+}
+
+.pagination .page-information {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-padding: 0;
+    -fx-font-size: 0;
+}
