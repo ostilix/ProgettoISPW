@@ -4,223 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/MainCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/MainDEMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/MainFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/MainType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/AvailabilityBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/BookingBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/HostBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/NotificationBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/ReviewBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/StayBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/app/BookStayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/app/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/app/NotificationsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/app/OnlinePaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/app/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/AbstractGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/BookingGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/HomeGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/HostHomeGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/ListStaysGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/LoginAndRegisterGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/NotificationsGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/cli/StayDetailsGUIControllerCLI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/AbstractGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/BookingGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/HomeGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/HostHomeGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/ListStaysGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/LoginAndRegisterGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/NotificationsGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/StayDetailsGUIControllerFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/AvailabilityDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/BookingDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/HostDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/NotificationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/ReviewDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/StayDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/AvailabilityDEMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/BookingDEMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/HostDEMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/NotificationDEMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/ReviewDEMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/StayDEMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/AvailabilityFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/BookingFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/HostFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/NotificationFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/ReviewFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/StayFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/AvailabilityJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/BookingJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/HostJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/NotificationJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/ReviewJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/SingletonConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/StayJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/queries/AvailabilityQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/queries/BookingQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/queries/HostQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/queries/NotificationQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/queries/ReviewQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/jdbc/queries/StayQueries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/engineering/payment/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/engineering/payment/PayPalAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/engineering/payment/PaymentAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/engineering/payment/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/engineering/payment/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/DuplicateEntryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/EncryptionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/IncorrectDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/OperationFailedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/dao/ConnectionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/dao/DAOException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/exception/dao/TypeDAOException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Availability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Host.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Stay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/TypeNotif.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/SessionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/ToBeanConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/CSVHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/DemoDataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/DemoIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/MemoryDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/ObjectSerializationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/factory/DEMOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/factory/FSFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/factory/FactorySingletonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/factory/JDBCFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/factory/TypeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/view/cli/ReturningHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/view/fx/FilesFXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/view/fx/PageManagerSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/AbstractView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/BookingView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/HomeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/HostHomeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/ListStaysView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/LoginAndRegisterView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/NotificationsView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/StayDetailsView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/BookingView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HomeView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HostHomeView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ListStaysView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LoginAndRegisterView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/NotificationsView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/StayDetailsView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/bookingStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/globalStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/homeStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/hostHomeStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/listStaysStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/loginAndRegisterStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/notificationStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/stayDetailsStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/availability.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/booking.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/host.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/notification.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/review.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/stay.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_Condensed-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/Roboto/static/Roboto_SemiCondensed-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Stay9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/background_host.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logger/logFile.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/start.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nestaway/bean/TestBookingBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nestaway/controller/app/BookStayControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nestaway/controller/app/LoginControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nestaway/model/UserTest.java" afterDir="false" />
+    <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment="First commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,8 +126,17 @@
       <workItem from="1751982269870" duration="15014000" />
       <workItem from="1752045588198" duration="4396000" />
       <workItem from="1752050036073" duration="407000" />
-      <workItem from="1752050460069" duration="3184000" />
+      <workItem from="1752050460069" duration="3874000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1752054477333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752054477333</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
