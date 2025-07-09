@@ -56,7 +56,7 @@
 }
 
 .button:hover {
-    -fx-background-color: #transparent;
+    -fx-background-color: transparent;
 }
 
 .pagination {

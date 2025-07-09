@@ -33,7 +33,7 @@ public class AvailabilityBean {
         return isAvailable;
     }
 
-    public void setIsAvailable(Boolean isAvailable) throws IncorrectDataException {
+    public void setIsAvailable(Boolean isAvailable){
         this.isAvailable = isAvailable;
     }
 

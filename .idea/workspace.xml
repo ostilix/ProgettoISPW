@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment="First commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/AvailabilityBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/AvailabilityBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/listStaysStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/listStaysStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <workItem from="1751982269870" duration="15014000" />
       <workItem from="1752045588198" duration="4396000" />
       <workItem from="1752050036073" duration="407000" />
-      <workItem from="1752050460069" duration="5243000" />
+      <workItem from="1752050460069" duration="6856000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
