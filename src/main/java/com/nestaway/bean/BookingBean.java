@@ -46,7 +46,7 @@ public class BookingBean {
     }
 
     public void setLastName(String lastName) throws IncorrectDataException {
-        String pattern = "^[A-Z][a-zA-Z]*( [A-Z][a-zA-Z]*)?('?([A-Z][a-zA-Z]*)?)?$";
+        String pattern = "^[A-Z][a-zA-Z]*( [A-Z][a-zA-Z]*)?(('[A-Z][a-zA-Z]*)?)?$";
         if (lastName == null || !Pattern.matches(pattern, lastName)) {
             throw new IncorrectDataException("Last name is not valid.");
         }

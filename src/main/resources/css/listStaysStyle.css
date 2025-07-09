@@ -82,12 +82,6 @@
     -fx-background-color: #ffe5e5;
 }
 
-.pagination .number-button:selected {
-    -fx-background-color: #ff595a;
-    -fx-text-fill: white;
-    -fx-border-color: #ff595a;
-}
-
 .pagination .page-information {
     -fx-opacity: 0;
     -fx-max-height: 0;

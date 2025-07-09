@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment=".." />
+    <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment="..">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/BookingBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/BookingBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/StayDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/StayDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/bookingStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/bookingStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/listStaysStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/listStaysStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/stayDetailsStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/stayDetailsStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logger/logFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logger/logFile.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +138,7 @@
       <workItem from="1752045588198" duration="4396000" />
       <workItem from="1752050036073" duration="407000" />
       <workItem from="1752050460069" duration="7056000" />
-      <workItem from="1752070529862" duration="2011000" />
+      <workItem from="1752070529862" duration="2998000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -180,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752072359132</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="..">
+      <option name="closed" value="true" />
+      <created>1752072670827</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752072670827</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -20,7 +20,7 @@ public class StayDEMO implements StayDAO {
     @Override
     public Stay selectStay(Integer idStay) throws DAOException {
         try {
-            Stay stay = MemoryDatabase.stays.stream().filter(s -> s.getIdStay() == idStay).findFirst().orElse(null);
+            Stay stay = MemoryDatabase.stays.stream().filter(s -> idStay != null && idStay.equals(s.getIdStay())).findFirst().orElse(null);
 
             if (stay != null) {
                 stay.setTransientParams();
