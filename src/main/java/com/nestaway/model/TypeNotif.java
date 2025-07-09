@@ -7,7 +7,7 @@ public enum TypeNotif {
 
     private final int id;
 
-    private TypeNotif(int id) {
+    TypeNotif(int id) {
         this.id = id;
     }
 

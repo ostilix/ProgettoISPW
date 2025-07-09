@@ -2,7 +2,6 @@ package com.nestaway.model;
 
 import com.nestaway.exception.EncryptionException;
 
-import java.io.Serial;
 import java.util.ArrayList;
 import java.util.List;
 

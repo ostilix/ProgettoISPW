@@ -2,8 +2,6 @@ package com.nestaway.model;
 
 import com.nestaway.exception.EncryptionException;
 
-import java.io.Serial;
-import java.io.Serializable;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
