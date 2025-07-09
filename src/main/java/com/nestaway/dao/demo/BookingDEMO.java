@@ -47,7 +47,7 @@ public class BookingDEMO implements BookingDAO {
         try {
             Set<String> codes = DemoIndex.getBookingStayMap().entrySet().stream().filter(entry -> entry.getValue().equals(idStay)).map(entry -> entry.getKey()).collect(Collectors.toSet());
 
-            return MemoryDatabase.getBookings().stream().filter(b -> codes.contains(b.getCodeBooking())).collect(Collectors.toList());
+            return MemoryDatabase.getBookings().stream().filter(b -> codes.contains(b.getCodeBooking())).toList();
         } catch (Exception e) {
             throw new DAOException("Error in selectBookingByStay", e, GENERIC);
         }

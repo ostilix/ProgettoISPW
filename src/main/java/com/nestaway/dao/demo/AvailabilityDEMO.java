@@ -7,7 +7,6 @@ import com.nestaway.utils.dao.MemoryDatabase;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.nestaway.exception.dao.TypeDAOException.GENERIC;
 
@@ -16,7 +15,7 @@ public class AvailabilityDEMO implements AvailabilityDAO {
     @Override
     public List<Availability> selectByStay(Integer idStay) throws DAOException {
         try {
-            return MemoryDatabase.getAvailabilities().stream().filter(a -> a.getIdStay().equals(idStay)).collect(Collectors.toList());
+            return MemoryDatabase.getAvailabilities().stream().filter(a -> a.getIdStay().equals(idStay)).toList();
         } catch (Exception e) {
             throw new DAOException("Error in selectByStay DEMO", e, GENERIC);
         }
@@ -25,7 +24,7 @@ public class AvailabilityDEMO implements AvailabilityDAO {
     @Override
     public List<Availability> selectInRange(Integer idStay, LocalDate from, LocalDate to) throws DAOException {
         try {
-            return MemoryDatabase.getAvailabilities().stream().filter(a -> a.getIdStay().equals(idStay) && !a.getDate().isBefore(from) && !a.getDate().isAfter(to)).collect(Collectors.toList());
+            return MemoryDatabase.getAvailabilities().stream().filter(a -> a.getIdStay().equals(idStay) && !a.getDate().isBefore(from) && !a.getDate().isAfter(to)).toList();
         } catch (Exception e) {
             throw new DAOException("Error in selectInRange DEMO", e, GENERIC);
         }

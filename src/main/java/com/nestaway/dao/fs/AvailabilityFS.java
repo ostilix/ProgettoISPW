@@ -84,13 +84,4 @@ public class AvailabilityFS implements AvailabilityDAO {
         return new Availability(Integer.parseInt(r[0]), LocalDate.parse(r[1]), Boolean.parseBoolean(r[2]), Integer.parseInt(r[3]));
     }
 
-    private String[] toCsvRecord(Integer idStay, Availability availability) {
-        return new String[] {
-                availability.getIdAvailability().toString(),
-                availability.getDate().toString(),
-                availability.getIsAvailable().toString(),
-                idStay.toString()
-        };
-    }
-
 }

@@ -2,11 +2,11 @@ package com.nestaway.utils;
 
 import com.nestaway.bean.*;
 import com.nestaway.exception.IncorrectDataException;
+import com.nestaway.exception.OperationFailedException;
 import com.nestaway.model.*;
 
 import java.time.ZoneId;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ToBeanConverter {
 
@@ -27,29 +27,18 @@ public class ToBeanConverter {
         stayBean.setNumBathrooms(stay.getNumBathrooms());
         stayBean.setHostUsername(stay.getHostUsername());
 
-        if (stay.getAvailability() != null) {
-            List<AvailabilityBean> availabilityBeans = stay.getAvailability().stream()
-                    .map(a -> {
-                        AvailabilityBean ab = new AvailabilityBean();
-                        ab.setIdAvailability(a.getIdAvailability());
-                        ab.setIdStay(a.getIdStay());
-                        try {
-                            ab.setDate(a.getDate());
-                            ab.setIsAvailable(a.getIsAvailable());
-                        } catch (IncorrectDataException e) {
-                            throw new RuntimeException("Invalid availability data for stay ID " + a.getIdStay(), e);
-                        }
-                        return ab;
-                    })
-                    .collect(Collectors.toList());
+        List<Availability> availabilities = stay.getAvailability();
 
-            stayBean.setAvailability(availabilityBeans);
+        if (availabilities != null) {
+            for (Availability availability : availabilities) {
+                stayBean.setAvailability(stayBean.getAvailability());
+            }
         }
 
         if (stay.getReviews() != null) {
             List<ReviewBean> reviewBeans = stay.getReviews().stream()
                     .map(ToBeanConverter::fromReviewToReviewBean)
-                    .collect(Collectors.toList());
+                            .toList();
 
             stayBean.setReviews(reviewBeans);
         }

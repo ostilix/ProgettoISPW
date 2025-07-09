@@ -7,7 +7,6 @@ import com.nestaway.model.Stay;
 import com.nestaway.utils.dao.MemoryDatabase;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.nestaway.exception.dao.TypeDAOException.*;
 
@@ -19,7 +18,7 @@ public class NotificationDEMO implements NotificationDAO {
             return MemoryDatabase.getNotifications().stream().filter(n -> {
                 Stay stay = MemoryDatabase.getStays().stream().filter(s -> s.getName().equals(n.getNameStay())).findFirst().orElse(null);
                 return stay != null && stay.getHostUsername().equals(idHost);
-            }).collect(Collectors.toList());
+            }).toList();
         } catch (Exception e) {
             throw new DAOException("Error in selectNotifications", e, GENERIC);
         }

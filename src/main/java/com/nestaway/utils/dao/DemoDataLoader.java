@@ -7,6 +7,12 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class DemoDataLoader {
+
+
+    private DemoDataLoader() {
+        throw new UnsupportedOperationException("Utility class");
+    }
+
     public static void load() throws EncryptionException {
         MemoryDatabase.getHosts().clear();
         MemoryDatabase.getStays().clear();

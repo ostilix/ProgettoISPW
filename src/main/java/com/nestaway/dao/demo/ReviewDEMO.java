@@ -6,7 +6,6 @@ import com.nestaway.model.Review;
 import com.nestaway.utils.dao.MemoryDatabase;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.nestaway.exception.dao.TypeDAOException.DUPLICATE;
 import static com.nestaway.exception.dao.TypeDAOException.GENERIC;
@@ -31,7 +30,7 @@ public class ReviewDEMO implements ReviewDAO {
     @Override
     public List<Review> selectByStay(Integer idStay) throws DAOException {
         try {
-            return MemoryDatabase.getReviews().stream().filter(r -> r.getIdStay() != null && r.getIdStay().equals(idStay)).collect(Collectors.toList());
+            return MemoryDatabase.getReviews().stream().filter(r -> r.getIdStay() != null && r.getIdStay().equals(idStay)).toList();
         } catch (Exception e) {
             throw new DAOException("Error in selectByStay DEMO", e, GENERIC);
         }

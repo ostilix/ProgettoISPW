@@ -11,7 +11,6 @@ import com.nestaway.utils.dao.MemoryDatabase;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.stream.Collectors;
 
 import static com.nestaway.exception.dao.TypeDAOException.GENERIC;
 
@@ -36,7 +35,7 @@ public class StayDEMO implements StayDAO {
     @Override
     public List<Stay> selectStayByCity(String city) throws DAOException {
         try {
-            List<Stay> result = MemoryDatabase.getStays().stream().filter(s -> s.getCity().equalsIgnoreCase(city)).collect(Collectors.toList());
+            List<Stay> result = MemoryDatabase.getStays().stream().filter(s -> s.getCity().equalsIgnoreCase(city)).toList();
 
             for (Stay stay : result) {
                 stay.setTransientParams();
@@ -52,7 +51,7 @@ public class StayDEMO implements StayDAO {
     @Override
     public List<Stay> selectStayByHost(String hostUsername) throws DAOException {
         try {
-            List<Stay> result = MemoryDatabase.getStays().stream().filter(s -> s.getHostUsername().equalsIgnoreCase(hostUsername)).collect(Collectors.toList());
+            List<Stay> result = MemoryDatabase.getStays().stream().filter(s -> s.getHostUsername().equalsIgnoreCase(hostUsername)).toList();
 
             for (Stay stay : result) {
                 stay.setTransientParams();
