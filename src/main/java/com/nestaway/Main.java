@@ -32,7 +32,7 @@ public class Main {
         String daoType = scanner.nextLine().trim().toUpperCase();
 
         while (!daoType.equals("JDBC") && !daoType.equals("FS") && !daoType.equals("DEMO")) {
-            System.out.print("Invalid input. Please enter JDBC, FS, or DEMO: ");
+            System.out.print("Invalid input. Please enter JDBC, FS, or DEMO : ");
             daoType = scanner.nextLine().trim().toUpperCase();
         }
 
