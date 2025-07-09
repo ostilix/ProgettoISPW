@@ -61,7 +61,7 @@ public class BookingBean {
     }
 
     public void setEmailAddress(String emailAddress) throws IncorrectDataException {
-        String emailPattern = "^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,3}$";
+        String emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}$";
         if (emailAddress == null || !Pattern.matches(emailPattern, emailAddress)) {
             throw new IncorrectDataException("Email address is not valid.");
         }
