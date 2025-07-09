@@ -2,7 +2,6 @@ package com.nestaway.utils;
 
 import com.nestaway.bean.*;
 import com.nestaway.exception.IncorrectDataException;
-import com.nestaway.exception.OperationFailedException;
 import com.nestaway.model.*;
 
 import java.time.ZoneId;
