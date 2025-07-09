@@ -1,12 +1,13 @@
 package com.nestaway.model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Stay {
+public class Stay implements Serializable {
 
     private String name;
     private Integer idStay;
@@ -18,9 +19,8 @@ public class Stay {
     private Integer numRooms;
     private Integer numBathrooms;
     private String hostUsername;
-
-    private transient List<Review> reviews;
-    private transient List<Availability> availability;
+    private List<Review> reviews;
+    private List<Availability> availability;
 
     public Stay(Integer idStay, String name, String description, String city, String address, Double pricePerNight, Integer maxGuests, Integer numRooms, Integer numBathrooms, String hostUsername) {
         this.idStay = idStay;

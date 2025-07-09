@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-public class TestBookingBean {
+class TestBookingBean {
     @Test
     void testSetEmail() throws IncorrectDataException {
         BookingBean bookingBean = new BookingBean();

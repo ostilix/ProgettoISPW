@@ -3,7 +3,6 @@ package com.nestaway.controller.app;
 import com.nestaway.bean.AvailabilityBean;
 import com.nestaway.bean.BookingBean;
 import com.nestaway.bean.StayBean;
-import com.nestaway.exception.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

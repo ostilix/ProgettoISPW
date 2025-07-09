@@ -8,10 +8,8 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class User implements Serializable {
+public class User{
 
-    @Serial
-    private static final long serialVersionUID = 1L;
     private final String username;
     private final String password;
 

@@ -67,9 +67,6 @@ public class StayDetailsGUIControllerFX extends AbstractGUIControllerFX {
     @FXML
     Button management;
 
-    @FXML
-    Label errorMsg;
-
     @FXML VBox reviewCard1, reviewCard2, reviewCard3;
 
     VBox[] reviewsCards;

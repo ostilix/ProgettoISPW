@@ -8,9 +8,6 @@ import java.util.List;
 
 public class Host extends User {
 
-    @Serial
-    private static final long serialVersionUID = 1L;
-
     private final String firstName;
     private final String lastName;
     private String emailAddress;
