@@ -103,7 +103,7 @@ public class BookStayController {
     }
 
     public void sendReservation(StayBean stayBean, BookingBean bookingBean, List<AvailabilityBean> availabilityBean)
-            throws OperationFailedException, DAOException, IncorrectDataException, DuplicateEntryException {
+            throws OperationFailedException, DAOException, DuplicateEntryException {
         try {
             checkBookingValid(bookingBean, availabilityBean);
 
