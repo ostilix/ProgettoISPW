@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment="..">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/BookingBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/BookingBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/StayDetailsGUIControllerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/StayDetailsGUIControllerFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/BookingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/StayFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/StayFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Host.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Stay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Stay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nestaway/bean/TestBookingBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nestaway/bean/TestBookingBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nestaway/controller/app/BookStayControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nestaway/controller/app/BookStayControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +137,7 @@
       <workItem from="1752045588198" duration="4396000" />
       <workItem from="1752050036073" duration="407000" />
       <workItem from="1752050460069" duration="7056000" />
-      <workItem from="1752070529862" duration="3806000" />
+      <workItem from="1752070529862" duration="5040000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -203,7 +203,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752073576653</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="..">
+      <option name="closed" value="true" />
+      <created>1752074454140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752074454140</updated>
+    </task>
+    <task id="LOCAL-00010" summary="..">
+      <option name="closed" value="true" />
+      <created>1752074654317</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752074654317</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

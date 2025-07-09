@@ -21,8 +21,8 @@ public class Host extends User {
         this.infoPayPal = infoPayPal;
     }
 
-    private transient List<Stay> stays = new ArrayList<>();
-    private transient List<Notification> notifications = new ArrayList<>();
+    private List<Stay> stays = new ArrayList<>();
+    private List<Notification> notifications = new ArrayList<>();
 
     public void addStay(Stay stay) {
         this.stays.add(new Stay( stay.getIdStay(), stay.getName(), stay.getDescription(), stay.getCity(), stay.getAddress(), stay.getPricePerNight(), stay.getMaxGuests(), stay.getNumRooms(), stay.getNumBathrooms(), stay.getHostUsername()));

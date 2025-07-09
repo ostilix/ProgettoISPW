@@ -11,8 +11,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.function.Predicate;
 
 import static com.nestaway.exception.dao.TypeDAOException.*;
 

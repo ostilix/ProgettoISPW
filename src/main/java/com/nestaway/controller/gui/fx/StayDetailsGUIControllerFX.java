@@ -67,7 +67,14 @@ public class StayDetailsGUIControllerFX extends AbstractGUIControllerFX {
     @FXML
     Button management;
 
-    @FXML VBox reviewCard1, reviewCard2, reviewCard3;
+    @FXML
+    VBox reviewCard1;
+
+    @FXML
+    VBox reviewCard2;
+
+    @FXML
+    VBox reviewCard3;
 
     VBox[] reviewsCards;
 
@@ -92,9 +99,6 @@ public class StayDetailsGUIControllerFX extends AbstractGUIControllerFX {
 
     @FXML
     public void bookStay() {
-        StayBean stayBean = SessionManager.getSessionManager().getSessionFromId(currentSession).getStay();
-        LocalDate checkIn = SessionManager.getSessionManager().getSessionFromId(currentSession).getCheckIn();
-        LocalDate checkOut = SessionManager.getSessionManager().getSessionFromId(currentSession).getCheckOut();
         goNext(FilesFXML.BOOKING.getPath());
     }
 
