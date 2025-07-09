@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment="..">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/BookingBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/bean/BookingBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/StayDetailsGUIControllerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/gui/fx/StayDetailsGUIControllerFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/BookingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/StayFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/StayFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Host.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/AvailabilityDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/AvailabilityDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/BookingDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/BookingDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/HostDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/HostDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/NotificationDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/NotificationDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/ReviewDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/ReviewDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/StayDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/StayDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/DemoDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/DemoDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/MemoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/MemoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/listStaysStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/listStaysStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +140,7 @@
       <workItem from="1752045588198" duration="4396000" />
       <workItem from="1752050036073" duration="407000" />
       <workItem from="1752050460069" duration="7056000" />
-      <workItem from="1752070529862" duration="5040000" />
+      <workItem from="1752070529862" duration="5910000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -219,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752074654317</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="..">
+      <option name="closed" value="true" />
+      <created>1752075628303</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752075628303</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -59,10 +59,6 @@
     -fx-background-color: transparent;
 }
 
-.pagination {
-    -fx-background-color: transparent;
-}
-
 .pagination .control-box {
     -fx-spacing: 5;
 }

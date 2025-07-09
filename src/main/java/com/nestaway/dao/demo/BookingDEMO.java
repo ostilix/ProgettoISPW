@@ -23,7 +23,7 @@ public class BookingDEMO implements BookingDAO {
             boolean exists = DemoIndex.bookingStayMap.entrySet().stream().anyMatch(entry -> {
                         String code = entry.getKey();
                         Integer mappedIdStay = entry.getValue();
-                        return mappedIdStay.equals(idStay) && MemoryDatabase.bookings.stream().filter(b -> b.getCodeBooking().equals(code)).anyMatch(b -> b.getEmailAddress().equalsIgnoreCase(booking.getEmailAddress()) && b.getTelephone().equals(booking.getTelephone()));
+                        return mappedIdStay.equals(idStay) && MemoryDatabase.getBookings().stream().filter(b -> b.getCodeBooking().equals(code)).anyMatch(b -> b.getEmailAddress().equalsIgnoreCase(booking.getEmailAddress()) && b.getTelephone().equals(booking.getTelephone()));
             });
 
             if (exists) {
@@ -33,7 +33,7 @@ public class BookingDEMO implements BookingDAO {
             int idBooking = nextId(idStay);
             booking.setIdAndCodeBooking(idBooking);
 
-            MemoryDatabase.bookings.add(booking);
+            MemoryDatabase.getBookings().add(booking);
             DemoIndex.bookingStayMap.put(booking.getCodeBooking(), idStay);
 
             return booking;
@@ -47,7 +47,7 @@ public class BookingDEMO implements BookingDAO {
         try {
             Set<String> codes = DemoIndex.bookingStayMap.entrySet().stream().filter(entry -> entry.getValue().equals(idStay)).map(entry -> entry.getKey()).collect(Collectors.toSet());
 
-            return MemoryDatabase.bookings.stream().filter(b -> codes.contains(b.getCodeBooking())).collect(Collectors.toList());
+            return MemoryDatabase.getBookings().stream().filter(b -> codes.contains(b.getCodeBooking())).collect(Collectors.toList());
         } catch (Exception e) {
             throw new DAOException("Error in selectBookingByStay", e, GENERIC);
         }
@@ -56,7 +56,7 @@ public class BookingDEMO implements BookingDAO {
     @Override
     public Booking selectBookingByCode(String codeBooking) throws DAOException {
         try {
-            return MemoryDatabase.bookings.stream().filter(b -> b.getCodeBooking().equals(codeBooking)).findFirst().orElse(null);
+            return MemoryDatabase.getBookings().stream().filter(b -> b.getCodeBooking().equals(codeBooking)).findFirst().orElse(null);
         } catch (Exception e) {
             throw new DAOException("Error in selectBookingByCode", e, GENERIC);
         }

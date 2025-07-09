@@ -16,7 +16,7 @@ public class AvailabilityDEMO implements AvailabilityDAO {
     @Override
     public List<Availability> selectByStay(Integer idStay) throws DAOException {
         try {
-            return MemoryDatabase.availabilities.stream().filter(a -> a.getIdStay().equals(idStay)).collect(Collectors.toList());
+            return MemoryDatabase.getAvailabilities().stream().filter(a -> a.getIdStay().equals(idStay)).collect(Collectors.toList());
         } catch (Exception e) {
             throw new DAOException("Error in selectByStay DEMO", e, GENERIC);
         }
@@ -25,7 +25,7 @@ public class AvailabilityDEMO implements AvailabilityDAO {
     @Override
     public List<Availability> selectInRange(Integer idStay, LocalDate from, LocalDate to) throws DAOException {
         try {
-            return MemoryDatabase.availabilities.stream().filter(a -> a.getIdStay().equals(idStay) && !a.getDate().isBefore(from) && !a.getDate().isAfter(to)).collect(Collectors.toList());
+            return MemoryDatabase.getAvailabilities().stream().filter(a -> a.getIdStay().equals(idStay) && !a.getDate().isBefore(from) && !a.getDate().isAfter(to)).collect(Collectors.toList());
         } catch (Exception e) {
             throw new DAOException("Error in selectInRange DEMO", e, GENERIC);
         }
@@ -34,7 +34,7 @@ public class AvailabilityDEMO implements AvailabilityDAO {
     @Override
     public void deleteInRange(LocalDate checkIn, LocalDate checkOut, Integer idStay) throws DAOException {
         try {
-            MemoryDatabase.availabilities.removeIf(a ->
+            MemoryDatabase.getAvailabilities().removeIf(a ->
                     a.getIdStay().equals(idStay) && !a.getDate().isBefore(checkIn) && a.getDate().isBefore(checkOut));
         } catch (Exception e) {
             throw new DAOException("Error in deleteInRange DEMO", e, GENERIC);
@@ -44,7 +44,7 @@ public class AvailabilityDEMO implements AvailabilityDAO {
     @Override
     public void deleteAvailability(Integer idStay, LocalDate date) throws DAOException {
         try {
-            MemoryDatabase.availabilities.removeIf(a -> a.getIdStay().equals(idStay) && a.getDate().equals(date));
+            MemoryDatabase.getAvailabilities().removeIf(a -> a.getIdStay().equals(idStay) && a.getDate().equals(date));
         } catch (Exception e) {
             throw new DAOException("Error in deleteAvailability DEMO", e, GENERIC);
         }
@@ -53,7 +53,7 @@ public class AvailabilityDEMO implements AvailabilityDAO {
     @Override
     public void deleteAllByStay(Integer idStay) throws DAOException {
         try {
-            MemoryDatabase.availabilities.removeIf(a -> a.getIdStay().equals(idStay));
+            MemoryDatabase.getAvailabilities().removeIf(a -> a.getIdStay().equals(idStay));
         } catch (Exception e) {
             throw new DAOException("Error in deleteAllByStay DEMO", e, GENERIC);
         }

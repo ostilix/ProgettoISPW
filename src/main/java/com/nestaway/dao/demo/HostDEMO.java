@@ -16,7 +16,7 @@ public class HostDEMO implements HostDAO {
     @Override
     public Host selectHost(String idHost) throws DAOException {
         try {
-            Host host = MemoryDatabase.hosts.stream().filter(h -> h.getUsername().equals(idHost)).findFirst().orElse(null);
+            Host host = MemoryDatabase.getHosts().stream().filter(h -> h.getUsername().equals(idHost)).findFirst().orElse(null);
 
             if (host != null) {
                 host.setTransientParams();
@@ -32,7 +32,7 @@ public class HostDEMO implements HostDAO {
     @Override
     public Host selectHost(String username, String password) throws DAOException {
         try {
-            Host host = MemoryDatabase.hosts.stream().filter(h -> h.getUsername().equals(username) && h.getPassword().equals(password)).findFirst().orElse(null);
+            Host host = MemoryDatabase.getHosts().stream().filter(h -> h.getUsername().equals(username) && h.getPassword().equals(password)).findFirst().orElse(null);
 
             if (host != null) {
                 host.setTransientParams();
@@ -48,17 +48,17 @@ public class HostDEMO implements HostDAO {
     @Override
     public void insertHost(Host host) throws DAOException {
         try {
-            boolean usernameExists = MemoryDatabase.hosts.stream().anyMatch(h -> h.getUsername().equals(host.getUsername()));
+            boolean usernameExists = MemoryDatabase.getHosts().stream().anyMatch(h -> h.getUsername().equals(host.getUsername()));
             if (usernameExists) {
                 throw new DAOException("Username already exists", DUPLICATE);
             }
 
-            boolean emailExists = MemoryDatabase.hosts.stream().anyMatch(h -> h.getEmailAddress().equals(host.getEmailAddress()));
+            boolean emailExists = MemoryDatabase.getHosts().stream().anyMatch(h -> h.getEmailAddress().equals(host.getEmailAddress()));
             if (emailExists) {
                 throw new DAOException("Host already exists", DUPLICATE);
             }
 
-            MemoryDatabase.hosts.add(host);
+            MemoryDatabase.getHosts().add(host);
         } catch (Exception e) {
             throw new DAOException("Error in insertHost", e, GENERIC);
         }
@@ -68,9 +68,9 @@ public class HostDEMO implements HostDAO {
         if (host == null) return;
 
         try {
-            List<Stay> stays = MemoryDatabase.stays.stream().filter(s -> s.getHostUsername().equals(host.getUsername())).toList();
+            List<Stay> stays = MemoryDatabase.getStays().stream().filter(s -> s.getHostUsername().equals(host.getUsername())).toList();
 
-            List<Notification> notifications = MemoryDatabase.notifications.stream().filter(n -> stays.stream().anyMatch(s -> s.getName().equals(n.getNameStay()))).toList();
+            List<Notification> notifications = MemoryDatabase.getNotifications().stream().filter(n -> stays.stream().anyMatch(s -> s.getName().equals(n.getNameStay()))).toList();
 
             host.addStay(stays);
             host.addNotification(notifications);

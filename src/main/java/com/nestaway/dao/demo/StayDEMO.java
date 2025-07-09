@@ -20,7 +20,7 @@ public class StayDEMO implements StayDAO {
     @Override
     public Stay selectStay(Integer idStay) throws DAOException {
         try {
-            Stay stay = MemoryDatabase.stays.stream().filter(s -> idStay != null && idStay.equals(s.getIdStay())).findFirst().orElse(null);
+            Stay stay = MemoryDatabase.getStays().stream().filter(s -> idStay != null && idStay.equals(s.getIdStay())).findFirst().orElse(null);
 
             if (stay != null) {
                 stay.setTransientParams();
@@ -36,7 +36,7 @@ public class StayDEMO implements StayDAO {
     @Override
     public List<Stay> selectStayByCity(String city) throws DAOException {
         try {
-            List<Stay> result = MemoryDatabase.stays.stream().filter(s -> s.getCity().equalsIgnoreCase(city)).collect(Collectors.toList());
+            List<Stay> result = MemoryDatabase.getStays().stream().filter(s -> s.getCity().equalsIgnoreCase(city)).collect(Collectors.toList());
 
             for (Stay stay : result) {
                 stay.setTransientParams();
@@ -52,7 +52,7 @@ public class StayDEMO implements StayDAO {
     @Override
     public List<Stay> selectStayByHost(String hostUsername) throws DAOException {
         try {
-            List<Stay> result = MemoryDatabase.stays.stream().filter(s -> s.getHostUsername().equalsIgnoreCase(hostUsername)).collect(Collectors.toList());
+            List<Stay> result = MemoryDatabase.getStays().stream().filter(s -> s.getHostUsername().equalsIgnoreCase(hostUsername)).collect(Collectors.toList());
 
             for (Stay stay : result) {
                 stay.setTransientParams();

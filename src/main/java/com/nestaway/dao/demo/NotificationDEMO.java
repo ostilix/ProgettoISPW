@@ -16,8 +16,8 @@ public class NotificationDEMO implements NotificationDAO {
     @Override
     public List<Notification> selectNotifications(String idHost) throws DAOException {
         try {
-            return MemoryDatabase.notifications.stream().filter(n -> {
-                Stay stay = MemoryDatabase.stays.stream().filter(s -> s.getName().equals(n.getNameStay())).findFirst().orElse(null);
+            return MemoryDatabase.getNotifications().stream().filter(n -> {
+                Stay stay = MemoryDatabase.getStays().stream().filter(s -> s.getName().equals(n.getNameStay())).findFirst().orElse(null);
                 return stay != null && stay.getHostUsername().equals(idHost);
             }).collect(Collectors.toList());
         } catch (Exception e) {
@@ -28,13 +28,13 @@ public class NotificationDEMO implements NotificationDAO {
     @Override
     public void addNotification(String idHost, Notification notification) throws DAOException {
         try {
-            boolean exists = MemoryDatabase.notifications.stream().anyMatch(n -> n.getType() == notification.getType() && n.getNameStay().equals(notification.getNameStay()) && n.getBookingCode().equals(notification.getBookingCode()) && n.getDateAndTime().equals(notification.getDateAndTime()));
+            boolean exists = MemoryDatabase.getNotifications().stream().anyMatch(n -> n.getType() == notification.getType() && n.getNameStay().equals(notification.getNameStay()) && n.getBookingCode().equals(notification.getBookingCode()) && n.getDateAndTime().equals(notification.getDateAndTime()));
 
             if (exists) {
                 throw new DAOException("Notification already exists", DUPLICATE);
             }
 
-            MemoryDatabase.notifications.add(notification);
+            MemoryDatabase.getNotifications().add(notification);
         } catch (Exception e) {
             throw new DAOException("Error in addNotification", e, GENERIC);
         }
@@ -43,8 +43,8 @@ public class NotificationDEMO implements NotificationDAO {
     @Override
     public void deleteNotification(String idHost, List<Notification> notifsToDelete) throws DAOException {
         try {
-            MemoryDatabase.notifications.removeIf(n -> {
-                Stay stay = MemoryDatabase.stays.stream().filter(s -> s.getName().equals(n.getNameStay())).findFirst().orElse(null);
+            MemoryDatabase.getNotifications().removeIf(n -> {
+                Stay stay = MemoryDatabase.getStays().stream().filter(s -> s.getName().equals(n.getNameStay())).findFirst().orElse(null);
 
                 if (stay == null || !stay.getHostUsername().equals(idHost)) {
                     return false;
@@ -61,8 +61,8 @@ public class NotificationDEMO implements NotificationDAO {
     @Override
     public void deleteNotificationByHost(String idHost) throws DAOException {
         try {
-            MemoryDatabase.notifications.removeIf(n -> {
-                Stay stay = MemoryDatabase.stays.stream().filter(s -> s.getName().equals(n.getNameStay())).findFirst().orElse(null);
+            MemoryDatabase.getNotifications().removeIf(n -> {
+                Stay stay = MemoryDatabase.getStays().stream().filter(s -> s.getName().equals(n.getNameStay())).findFirst().orElse(null);
                 return stay != null && stay.getHostUsername().equals(idHost);
             });
         } catch (Exception e) {
