@@ -20,7 +20,7 @@ public class BookingDEMO implements BookingDAO {
     @Override
     public Booking addBooking(Integer idStay, Booking booking) throws DAOException {
         try {
-            boolean exists = DemoIndex.bookingStayMap.entrySet().stream().anyMatch(entry -> {
+            boolean exists = DemoIndex.getBookingStayMap().entrySet().stream().anyMatch(entry -> {
                         String code = entry.getKey();
                         Integer mappedIdStay = entry.getValue();
                         return mappedIdStay.equals(idStay) && MemoryDatabase.getBookings().stream().filter(b -> b.getCodeBooking().equals(code)).anyMatch(b -> b.getEmailAddress().equalsIgnoreCase(booking.getEmailAddress()) && b.getTelephone().equals(booking.getTelephone()));
@@ -34,7 +34,7 @@ public class BookingDEMO implements BookingDAO {
             booking.setIdAndCodeBooking(idBooking);
 
             MemoryDatabase.getBookings().add(booking);
-            DemoIndex.bookingStayMap.put(booking.getCodeBooking(), idStay);
+            DemoIndex.getBookingStayMap().put(booking.getCodeBooking(), idStay);
 
             return booking;
         } catch (Exception e) {
@@ -45,7 +45,7 @@ public class BookingDEMO implements BookingDAO {
     @Override
     public List<Booking> selectBookingByStay(Integer idStay) throws DAOException {
         try {
-            Set<String> codes = DemoIndex.bookingStayMap.entrySet().stream().filter(entry -> entry.getValue().equals(idStay)).map(entry -> entry.getKey()).collect(Collectors.toSet());
+            Set<String> codes = DemoIndex.getBookingStayMap().entrySet().stream().filter(entry -> entry.getValue().equals(idStay)).map(entry -> entry.getKey()).collect(Collectors.toSet());
 
             return MemoryDatabase.getBookings().stream().filter(b -> codes.contains(b.getCodeBooking())).collect(Collectors.toList());
         } catch (Exception e) {
@@ -63,7 +63,7 @@ public class BookingDEMO implements BookingDAO {
     }
 
     private int nextId(Integer idStay) {
-        long count = DemoIndex.bookingStayMap.values().stream().filter(stayId -> stayId.equals(idStay)).count();
+        long count = DemoIndex.getBookingStayMap().values().stream().filter(stayId -> stayId.equals(idStay)).count();
         return (int) count + 1;
     }
 }

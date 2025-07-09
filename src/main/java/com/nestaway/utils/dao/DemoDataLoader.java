@@ -14,7 +14,7 @@ public class DemoDataLoader {
         MemoryDatabase.getBookings().clear();
         MemoryDatabase.getReviews().clear();
         MemoryDatabase.getNotifications().clear();
-        DemoIndex.bookingStayMap.clear();
+        DemoIndex.getBookingStayMap().clear();
 
         // Host
         Host host = new Host("Demo", "Demo", "Demo@gmail.com", "demo", "demo@gmail.com", "demo");
@@ -38,7 +38,7 @@ public class DemoDataLoader {
         booking.setIdAndCodeBooking("A2j0f030c5");
         MemoryDatabase.getBookings().add(booking);
 
-        DemoIndex.bookingStayMap.put(booking.getCodeBooking(), stay.getIdStay());
+        DemoIndex.getBookingStayMap().put(booking.getCodeBooking(), stay.getIdStay());
 
         // Review
         Review review = new Review(booking.getCodeBooking(), 5, "Esperienza fantastica!",
