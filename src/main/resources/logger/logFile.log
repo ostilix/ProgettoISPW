@@ -4052,3 +4052,130 @@ lug 09, 2025 5:20:26 PM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileg
 INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
 lug 09, 2025 5:20:37 PM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
 INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 9:58:40 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 9:58:41 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:58:41 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:58:41 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:58:41 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:58:44 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:58:45 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:58:51 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:58:54 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 9:59:56 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:00:03 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:00:19 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:01:15 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:01:18 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:01:18 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:18 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:18 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:18 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:19 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:21 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:25 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:29 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:01:42 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:01:45 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:01:47 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:02:12 AM com.nestaway.controller.app.BookStayController sendReservation
+SEVERE: Error in addBooking
+com.nestaway.exception.dao.DAOException: Booking already exists
+	at NestAway/com.nestaway.dao.demo.BookingDEMO.addBooking(BookingDEMO.java:30)
+	at NestAway/com.nestaway.controller.app.BookStayController.sendReservation(BookStayController.java:132)
+	at NestAway/com.nestaway.controller.gui.fx.BookingGUIControllerFX.bookStay(BookingGUIControllerFX.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base@21/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at javafx.fxml@21/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+lug 10, 2025 10:03:31 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:03:36 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:03:38 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:03:57 AM com.sun.javafx.css.StyleManager loadStylesheetUnPrivileged
+INFO: Could not load @font-face font [file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/fonts/Roboto/static/Roboto-Regular.ttf]
+lug 10, 2025 10:03:57 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:03:57 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:03:57 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css
+lug 10, 2025 10:03:57 AM javafx.scene.CssStyleHelper calculateValue
+WARNING: Caught 'java.lang.ClassCastException: class java.lang.Double cannot be cast to class javafx.scene.paint.Paint (java.lang.Double is in module java.base of loader 'bootstrap'; javafx.scene.paint.Paint is in module javafx.graphics@21 of loader 'app')' while converting value for '-fx-border-color' from rule '*.text-field' in stylesheet file:/C:/Users/Ostil/Desktop/Università_Stefano/TOR_VERGATA/III_anno/Ingegneria_del_Software_e_Progettazione_Web/NestAway_progetto/NestAway/target/classes/css/homeStyle.css

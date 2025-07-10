@@ -66,7 +66,5 @@ public class Review {
     public void setIdStay(Integer idStay) {
         this.idStay = idStay;
     }
-
-
 }
 
