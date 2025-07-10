@@ -77,7 +77,7 @@ public class BookingBean {
     }
 
     public void setTelephone(String telephone) throws IncorrectDataException {
-        String phonePattern = "^\\+?\\{6,15}$";
+        String phonePattern = "^\\+\\d{6,15}$";
         if (telephone == null || !Pattern.matches(phonePattern, telephone)) {
             throw new IncorrectDataException("Telephone number is not valid.");
         }
