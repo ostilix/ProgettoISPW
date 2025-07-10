@@ -64,7 +64,6 @@ public class StayDEMO implements StayDAO {
         }
     }
 
-    // Helper method
     private void addReviewsAndAvailability(Stay stay) throws DAOException {
         ReviewDAO reviewDAO = new ReviewDEMO();
         AvailabilityDAO availabilityDAO = new AvailabilityDEMO();

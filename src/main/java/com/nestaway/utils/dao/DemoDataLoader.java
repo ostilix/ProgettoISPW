@@ -31,7 +31,7 @@ public class DemoDataLoader {
                 "Via Testaccio 12", 75.00, 4, 2, 1, host.getUsername());
         MemoryDatabase.getStays().add(stay);
 
-        // Availability (opzionale se vuoi mantenere)
+        // Availability
         LocalDate today = LocalDate.now();
         for (int i = 0; i < 5; i++) {
             Availability availability = new Availability(i + 1, today.plusDays(i), true, stay.getIdStay());

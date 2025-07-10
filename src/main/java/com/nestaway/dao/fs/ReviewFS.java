@@ -50,7 +50,6 @@ public class ReviewFS implements ReviewDAO {
         return review;
     }
 
-
     private String[] toCsvRecord(Review review) {
         return new String[] {
                 review.getIdReview().toString(),

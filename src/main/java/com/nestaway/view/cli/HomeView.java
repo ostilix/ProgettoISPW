@@ -28,6 +28,5 @@ public class HomeView extends AbstractView {
         showMessage("Number of guests: " + data[3]);
 
         return data;
-
     }
 }

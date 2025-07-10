@@ -65,5 +65,4 @@ public class ListStaysView extends AbstractView{
             return -1;
         }
     }
-
 }

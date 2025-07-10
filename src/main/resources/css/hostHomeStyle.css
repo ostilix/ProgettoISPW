@@ -9,19 +9,16 @@
     -fx-text-fill: #2e2e2e;
 }
 
-/* === Sfondo della schermata === */
 .root-background {
     -fx-background-image: url("../images/background_host.png");
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
 }
 
-/* === Overlay bianco trasparente sopra lo sfondo === */
 .overlay {
-    -fx-background-color: rgba(255, 255, 255, 0.5); /* 25% di opacità */
+    -fx-background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* === Pulsante Login in alto a destra === */
 .login-button {
     -fx-font-family: "Roboto";
     -fx-font-size: 15px;
@@ -32,14 +29,12 @@
     -fx-cursor: hand;
 }
 
-/* === Etichette generiche === */
 .label {
     -fx-font-size: 17px;
     -fx-font-weight: 500;
     -fx-text-fill: #2a2a2a;
 }
 
-/* === Titolo centrale grande (frase motivazionale) === */
 .title-label {
     -fx-font-size: 48px;
     -fx-font-weight: bold;
@@ -52,7 +47,6 @@
     -fx-text-fill: #000000;
 }
 
-/* === Campi di testo (City, Check-in, ecc.) === */
 .text-field {
     -fx-font-family: "Roboto";
     -fx-font-size: 16px;
@@ -64,7 +58,6 @@
     -fx-border-color: 99999990;
 }
 
-/* === Pulsante "Search" === */
 .button {
     -fx-font-family: "Roboto";
     -fx-font-size: 16px;

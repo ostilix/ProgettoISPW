@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9de3af15-d2ee-4387-a112-07f2e80bddb5" name="Changes" comment="..">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logger/logFile.log.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b5b55b42-ae9e-4476-8330-a0e464bab411.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b5b55b42-ae9e-4476-8330-a0e464bab411.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/MainDEMO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/MainCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/MainCLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/app/BookStayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/controller/app/BookStayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/BookingDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/BookingDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/StayDEMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/demo/StayDEMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/ReviewFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/ReviewFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/StayFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/dao/fs/StayFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/DemoDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/DemoDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/MemoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/MemoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/utils/dao/ObjectSerializationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/AbstractView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/AbstractView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/HomeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/ListStaysView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nestaway/view/cli/ListStaysView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/bookingStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/bookingStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/globalStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/homeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/homeStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/hostHomeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/hostHomeStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/loginAndRegisterStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/loginAndRegisterStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/notificationStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/notificationStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +151,7 @@
       <workItem from="1752050036073" duration="407000" />
       <workItem from="1752050460069" duration="7056000" />
       <workItem from="1752070529862" duration="11851000" />
-      <workItem from="1752132391792" duration="2152000" />
+      <workItem from="1752132391792" duration="5412000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -292,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752132567797</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="..">
+      <option name="closed" value="true" />
+      <created>1752134662868</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1752134662868</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

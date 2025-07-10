@@ -89,6 +89,4 @@ public abstract class AbstractView {
         }
 
     }
-
-
 }

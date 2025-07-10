@@ -15,8 +15,6 @@ import static com.nestaway.exception.dao.TypeDAOException.*;
 
 public class BookingDEMO implements BookingDAO {
 
-    private final AtomicInteger globalCounter = new AtomicInteger(0);
-
     @Override
     public Booking addBooking(Integer idStay, Booking booking) throws DAOException {
         try {

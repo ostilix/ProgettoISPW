@@ -14,11 +14,9 @@ public final class MemoryDatabase {
     private static final List<Notification> notifications = new ArrayList<>();
     private static final List<Host> hosts = new ArrayList<>();
 
-    // Costruttore privato per impedire istanze
     private MemoryDatabase() {
     }
 
-    // --- Getter sicuri (con lista immutabile opzionale) ---
     public static List<Stay> getStays() {
         return stays;
     }

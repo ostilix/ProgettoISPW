@@ -73,7 +73,6 @@ public class StayFS implements StayDAO {
         }
     }
 
-
     public void insertStay(Stay stay) throws DAOException {
         try {
             List<String[]> allRows = csvHandler.readAll();

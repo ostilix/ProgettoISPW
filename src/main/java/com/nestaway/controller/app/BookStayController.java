@@ -160,7 +160,6 @@ public class BookStayController {
         }
     }
 
-
     private void checkBookingValid(BookingBean bookingBean, List<AvailabilityBean> availabilityBeans) throws OperationFailedException {
         LocalDate checkIn = bookingBean.getCheckInDate();
         LocalDate checkOut = bookingBean.getCheckOutDate();

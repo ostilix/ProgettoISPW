@@ -21,7 +21,7 @@ public class MainCLI {
             try {
                 DemoDataLoader.load();
             } catch (EncryptionException e) {
-                logger.log(Level.SEVERE, "Error loading demo data", e); // ✅ Log al posto di System.err
+                logger.log(Level.SEVERE, "Error loading demo data", e);
             }
         }
 
