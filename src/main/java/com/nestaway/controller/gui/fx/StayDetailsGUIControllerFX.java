@@ -157,15 +157,30 @@ public class StayDetailsGUIControllerFX extends AbstractGUIControllerFX {
             ObservableList<Node> elements = reviewsCards[i].getChildren();
             ReviewBean review = reviews.get(pageIndex * maxReviews + i);
 
-            Label ratingLabel = (Label) ((HBox) elements.get(0)).getChildren().get(0);
+            Label ratingLabel;
+            Node ratingNode = elements.get(0);
+            if (ratingNode instanceof HBox) {
+                HBox outer = (HBox) ratingNode;
+                Node inner = outer.getChildren().get(0);
+                if (inner instanceof HBox) {
+                    ratingLabel = (Label) ((HBox) inner).getChildren().get(0);
+                } else {
+                    ratingLabel = (Label) inner;
+                }
+            } else {
+                throw new IllegalStateException("Unexpected node type in reviewCard: " + ratingNode.getClass().getName());
+            }
+
             Label commentLabel = (Label) ((HBox) elements.get(1)).getChildren().get(0);
+
             Label dateLabel = (Label) ((HBox) elements.get(2)).getChildren().get(0);
 
             ratingLabel.setText("Rating: " + review.getRating() + "/5");
             commentLabel.setText("Comment: " + review.getComment());
-            dateLabel.setText("Date: " + review.getDate());
+            dateLabel.setText("Date: " + review.getDate().toString());
         }
     }
+
 
     private void applyRoundedCorners(ImageView imageView, double arcWidth, double arcHeight) {
         Image img = imageView.getImage();
