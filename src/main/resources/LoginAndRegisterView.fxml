@@ -44,7 +44,7 @@
                         <Label styleClass="title-label" text="Login" />
                         <TextField fx:id="userLogin" promptText="Username" />
                         <PasswordField fx:id="passLogin" promptText="Password" />
-                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" prefWidth="548.0" text="Login" />
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" prefWidth="840.0" text="Login" />
                         <Label fx:id="loginMessage" text="Error message" visible="false" />
                      </children>
                      <padding>
@@ -68,7 +68,7 @@
                               <PasswordField fx:id="password" promptText="Password" HBox.hgrow="ALWAYS" />
                            </children>
                         </HBox>
-                        <Button fx:id="signupButton" mnemonicParsing="false" onAction="#signupAction" prefWidth="548.0" text="Sign Up" />
+                        <Button fx:id="signupButton" mnemonicParsing="false" onAction="#signupAction" prefWidth="850.0" text="Sign Up" />
                         <Label fx:id="signupMessage" text="Error message" visible="false" />
                      </children>
                      <padding>
